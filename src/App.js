@@ -1,5 +1,6 @@
 import CostItem from "./components/Costs/CostItem";
 import Costs from "./components/Costs/Costs";
+import NewCost from "./components/NewCost/NewCost";
 
 
 function App() {
@@ -22,12 +23,12 @@ function App() {
         },
     ];
 
-  return (
-      <Costs
-          costs={costs}
-      />
-
-  );
+    return (
+        <div>
+            <NewCost />
+            <Costs costs={costs} />
+        </div>
+    );
 }
 
 export default App;
